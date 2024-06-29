@@ -1,15 +1,18 @@
+'use client'
 import React from "react";
 import ShareCause from "../ShareCause/ShareCause";
 import { causeDetailData } from "@/data/cause";
 import { siteData } from "@/data";
+import { useParams } from "next/navigation";
 
 interface CauseDetailProps {
-  slug: string;
 }
 
 
 
-const CauseDetail: React.FC<CauseDetailProps> = ({ slug }) => {
+const CauseDetail: React.FC<CauseDetailProps> = () => {
+  const { slug } = useParams<{ slug: string }>();
+
     const educationCause = causeDetailData[slug];
   return (
     <section id="trending_causes_main" className="section_padding">
