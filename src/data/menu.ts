@@ -20,19 +20,6 @@ export const navMenu = {
     { id: uuid4(),
       title: "Marketplace",
       href: "marketplace",
-      submenu: [
-        {
-          id: uuid4(),
-          title: "Work",
-          href: "/marketplace/" + generateSlug("Work"),
-        },
-        {
-          id: uuid4(),
-          title: "Hire",
-          href: "/marketplace/" + generateSlug("Hire"),
-        },
-        // Add more items as needed
-      ],
     },
     // { id: uuid4(), title: "About", href: "marketplace" },
     // { id: uuid4(), title: "Media/News", href: "media-announcement-and-news" },
@@ -40,87 +27,87 @@ export const navMenu = {
     // {
     //   id: uuid4(),
     //   title: "Causes",
-    //   href: "/our-causes",
+    //   href: "/gig",
     //   submenu: [
     //     {
     //       id: uuid4(),
     //       title: "Education",
-    //       href: "/our-causes/" + generateSlug("Education"),
+    //       href: "/gig/" + generateSlug("Education"),
     //       submenu: [
     //         {
     //           id: uuid4(),
     //           title: "Rajhi",
-    //           href: "/our-causes/" + generateSlug("education hut rajhi"),
+    //           href: "/gig/" + generateSlug("education hut rajhi"),
     //         },
     //         {
     //           id: uuid4(),
     //           title: "Kanpur",
-    //           href: "/our-causes/" + generateSlug("education hut kanpur"),
+    //           href: "/gig/" + generateSlug("education hut kanpur"),
     //         },
     //         {
     //           id: uuid4(),
     //           title: "Shankarpur",
-    //           href: "/our-causes/" + generateSlug("education hut shankarpur"),
+    //           href: "/gig/" + generateSlug("education hut shankarpur"),
     //         },
     //       ],
     //     },
     //     {
     //       id: uuid4(),
     //       title: "Khyal",
-    //       href: "/our-causes/" + generateSlug("Khyal"),
+    //       href: "/gig/" + generateSlug("Khyal"),
     //       submenu: [
     //         {
     //           id: uuid4(),
     //           title: "II",
-    //           href: "/our-causes/" + generateSlug("khyal II"),
+    //           href: "/gig/" + generateSlug("khyal II"),
     //         },
     //         {
     //           id: uuid4(),
     //           title: "III",
-    //           href: "/our-causes/" + generateSlug("khyal III"),
+    //           href: "/gig/" + generateSlug("khyal III"),
     //         },
     //         {
     //           id: uuid4(),
     //           title: "IV",
-    //           href: "/our-causes/" + generateSlug("khyal IV"),
+    //           href: "/gig/" + generateSlug("khyal IV"),
     //         },
     //       ],
     //     },
     //     {
     //       id: uuid4(),
     //       title: "Blood Donation",
-    //       href: "/our-causes/" + generateSlug("Blood Donation"),
+    //       href: "/gig/" + generateSlug("Blood Donation"),
     //     },
     //     {
     //       id: uuid4(),
     //       title: "Plantation",
-    //       href: "/our-causes/" + generateSlug("Plantation"),
+    //       href: "/gig/" + generateSlug("Plantation"),
     //     },
     //     {
     //       id: uuid4(),
     //       title: "Flood Relief",
-    //       href: "/our-causes/" + generateSlug("Flood Relief"),
+    //       href: "/gig/" + generateSlug("Flood Relief"),
     //     },
     //
     //     {
     //       id: uuid4(),
     //       title: "Book Bank",
-    //       href: "/our-causes/" + generateSlug("Book Bank"),
+    //       href: "/gig/" + generateSlug("Book Bank"),
     //     },
     //     {
     //       id: uuid4(),
     //       title: "Blanket Distribution",
-    //       href: "/our-causes/" + generateSlug("Blanket Distribution"),
+    //       href: "/gig/" + generateSlug("Blanket Distribution"),
     //     },
     //     {
     //       id: uuid4(),
     //       title: "Quiz Competition",
-    //       href: "/our-causes/" + generateSlug("Quiz Competition"),
+    //       href: "/gig/" + generateSlug("Quiz Competition"),
     //     },
     //     {
     //       id: uuid4(),
     //       title: "Amrit",
-    //       href: "/our-causes/" + generateSlug("Amrit"),
+    //       href: "/gig/" + generateSlug("Amrit"),
     //     },
     //   ],
     // },

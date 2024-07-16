@@ -103,9 +103,6 @@ const AboutService: React.FC<AboutServiceProps> = () => {
           <div className="col-lg-5 offset-lg-1">
             <div className="service_three_heading_right">
               <p>
-                Our warehousing services are known nationwide to be one of the most
-                reliable, safe, and affordable because we take pride in delivering
-                the best warehousing services.
               </p>
             </div>
           </div>
@@ -116,7 +113,7 @@ const AboutService: React.FC<AboutServiceProps> = () => {
                 <div className="case_boxed_wrapper" style={{ margin: '15px 0' }}>
                   <div className="causes_boxed_text">
                     <h3>
-                      <a href="causes.html">{cause.title}</a>
+                      <a href="/gig/socialMediaManager">{cause.title}</a>
                     </h3>
                     <div className="d-flex justify-content-between align-items-center">
                       <h5 className="h3-title">

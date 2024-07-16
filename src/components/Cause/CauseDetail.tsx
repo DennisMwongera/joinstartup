@@ -22,12 +22,9 @@ const CauseDetail: React.FC<CauseDetailProps> = () => {
             <div className="details_wrapper_area">
               <div className="details_big_img">
                 <img
-                  src={cause.mainImageSrc}
-                  alt={cause.mainImageAlt}
+                    src={cause.mainImageSrc}
+                    alt={cause.mainImageAlt}
                 />
-                <span className="causes_badge bg-yellow">
-                  {cause.badgeText}
-                </span>
               </div>
               <div className="details_skill_area">
                 <div className="class-full causes_pro_bar_flex progress_bar">
@@ -35,53 +32,35 @@ const CauseDetail: React.FC<CauseDetailProps> = () => {
                     <h3 className="h3-title">
                       Goal: <span>{cause.goalAmount}</span>
                     </h3>
-                    <div className="class-full-bar-percent">
-                      <h2>
-                        <span
-                          className="counting-data"
-                          data-count={cause.progressPercentage}
-                        >
-                          {cause.progressPercentage}
-                        </span>
-                        <span>%</span>
-                      </h2>
-                    </div>
-                    <div
-                      className="skill-bar class-bar"
-                      data-width={`${cause.progressPercentage}%`}
-                    >
-                      <div className="skill-bar-inner class-bar-in"></div>
-                    </div>
-                  </div>
-                  <div className="details_top_btn">
-                    <a
-                      href={siteData.donationUrl}
-                      className="btn btn_md btn_theme"
-                    >
-                      Donate now
-                    </a>
                   </div>
                 </div>
               </div>
+              {/*<span className="causes_badge bg-yellow" style={{float: 'right'}}>*/}
+              {/*    {cause.badgeText}*/}
+              {/*  </span>*/}
               <div className="details_text_wrapper">
-                {cause.detail.map((data: { title: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; description: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; description1: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; }) => (
-                  <>
-                    <h2>{data.title}</h2>
-                    <p>{data.description}</p>
-                    <p>{data.description1}</p>
-                  </>
+                {cause.detail.map((data: {
+                  title: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined;
+                  description: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined;
+                  description1: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined;
+                }) => (
+                    <>
+                      <h2>{data.title}</h2>
+                      <p>{data.description}</p>
+                      <p>{data.description1}</p>
+                    </>
                 ))}
 
                 <div className="row">
                   {cause.smallImages.map((image: string | undefined, index: React.Key | null | undefined) => (
-                    <div
-                      key={index}
-                      className="col-lg-4 col-md-4 col-sm-6 col-12"
-                    >
-                      <div className="details_small_img">
-                        <img src={image} alt="img" />
+                      <div
+                          key={index}
+                          className="col-lg-4 col-md-4 col-sm-6 col-12"
+                      >
+                        <div className="details_small_img">
+                          {/*<img src={image} alt="img"/>*/}
+                        </div>
                       </div>
-                    </div>
                   ))}
                 </div>
                 {/* <p>
@@ -98,13 +77,9 @@ const CauseDetail: React.FC<CauseDetailProps> = () => {
               {/* Project Causes */}
               <div className="project_organizer_wrapper sidebar_boxed">
                 <div className="project_organizer_img">
-                  <img
-                    src="/assets/img/team/1.jpeg"
-                    alt="img"
-                  />
                 </div>
                 <div className="project_organizer_text">
-                  <h5>Project organizer:</h5>
+                  <h5>Owner:</h5>
                   <h3>{cause.organizer.name}</h3>
                   <p>{cause.organizer.role}</p>
                   <ul>
@@ -124,45 +99,40 @@ const CauseDetail: React.FC<CauseDetailProps> = () => {
                 </div>
               </div>
               <>
-                <div className="project_recentdonet_wrapper sidebar_boxed">
-                  <div className="sidebar_heading_main">
-                    <h3>Top donations</h3>
-                  </div>
 
-                  {cause.topDonater.map((data: { name: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; amount: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; }) => (
-                    <div className="recent_donet_item">
-                      <div className="recent_donet_img">
-                        <a href="#">
-                          <img
-                            src="assets/img/sidebar/rec-donet-2.png"
-                            alt="img"
-                          />
-                        </a>
-                      </div>
-                      <div className="recent_donet_text">
-                        <div className="sidebar_inner_heading">
-                          <h4>
-                            <a href="#">{data.name}</a>
-                          </h4>
-                          <h5>{data.amount}</h5>
-                          <p>Business man</p>
-                          <h6>2 hours ago</h6>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                  {/*{cause.topDonater.map((data: { name: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; amount: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; }) => (*/}
+                  {/*  <div className="recent_donet_item">*/}
+                  {/*    <div className="recent_donet_img">*/}
+                  {/*      <a href="#">*/}
+                  {/*        <img*/}
+                  {/*          src="assets/img/sidebar/rec-donet-2.png"*/}
+                  {/*          alt="img"*/}
+                  {/*        />*/}
+                  {/*      </a>*/}
+                  {/*    </div>*/}
+                  {/*    <div className="recent_donet_text">*/}
+                  {/*      <div className="sidebar_inner_heading">*/}
+                  {/*        <h4>*/}
+                  {/*          <a href="#">{data.name}</a>*/}
+                  {/*        </h4>*/}
+                  {/*        <h5>{data.amount}</h5>*/}
+                  {/*        <p>Business man</p>*/}
+                  {/*        <h6>2 hours ago</h6>*/}
+                  {/*      </div>*/}
+                  {/*    </div>*/}
+                  {/*  </div>*/}
+                  {/*))}*/}
                 {/* Recent Causes */}
               </>
 
               {/* Project Causes */}
-              <div className="project_organizer_wrapper sidebar_boxed">
-                <div className="project_organizer_img">
-                  <img src="assets/img/causes/causes-sidebar.png" alt="img" />
-                </div>
-              </div>
+              {/*<div className="project_organizer_wrapper sidebar_boxed">*/}
+              {/*  <div className="project_organizer_img">*/}
+              {/*    <img src="assets/img/causes/causes-sidebar.png" alt="img" />*/}
+              {/*  </div>*/}
+              {/*</div>*/}
               {/* share Causes */}
-              <ShareCause />
+              {/*<ShareCause />*/}
             </div>
             {/* <div className="download_pdf_area">
               <div className="pdf_download_left">
