@@ -73,7 +73,7 @@ const Header: React.FC<HeaderProps> = ({ title, description }) => {
               <div className="main-responsive-menu">
                 <div className="logo">
                   <a href={"/"}>
-                    <img src="/assets/img/logo.png"  alt="logo" />
+                    <img src="/assets/img/logo.png" alt="logo"/>
                   </a>
                 </div>
               </div>

@@ -39,15 +39,15 @@ const Footer: React.FC<FooterProps> = ({ title, description }) => {
                 <div className="nav_item_footer">
                   <ul>
                     <li>
-                      <a href="about">About us</a>
+                      <a href="about">MarketPLace</a>
                     </li>
-                    <li>
-                      <a href="cause">Causes</a>
-                    </li>
-                    <li>
-                      <a href="media">Media</a>
-                    </li>
-                    
+                    {/*<li>*/}
+                    {/*  <a href="cause">Causes</a>*/}
+                    {/*</li>*/}
+                    {/*<li>*/}
+                    {/*  <a href="media">Media</a>*/}
+                    {/*</li>*/}
+
                     <li>
                       <a href="join">Join</a>
                     </li>
@@ -60,21 +60,21 @@ const Footer: React.FC<FooterProps> = ({ title, description }) => {
                 <h3>Support</h3>
                 <div className="nav_item_footer">
                   <ul>
-                    <li>
-                      <a href="faqs.html">Help &amp; FAQ</a>
-                    </li>
-                    <li>
-                      <a href="causes.html">Causes</a>
-                    </li>
-                    <li>
-                      <a href="events.html">Events</a>
-                    </li>
-                    <li>
-                      <a href="contact.html">Contact us</a>
-                    </li>
-                    <li>
-                      <a href="terms-service.html">Terms of service</a>
-                    </li>
+                    {/*<li>*/}
+                    {/*  <a href="faqs.html">Help &amp; FAQ</a>*/}
+                    {/*</li>*/}
+                    {/*<li>*/}
+                    {/*  <a href="causes.html">Causes</a>*/}
+                    {/*</li>*/}
+                    {/*<li>*/}
+                    {/*  <a href="events.html">Events</a>*/}
+                    {/*</li>*/}
+                    {/*<li>*/}
+                    {/*  <a href="contact.html">Contact us</a>*/}
+                    {/*</li>*/}
+                    {/*<li>*/}
+                    {/*  <a href="terms-service.html">Terms of service</a>*/}
+                    {/*</li>*/}
                   </ul>
                 </div>
               </div>
@@ -105,29 +105,29 @@ const Footer: React.FC<FooterProps> = ({ title, description }) => {
           <div className="row align-items-center">
             <div className="co-lg-6 col-md-6 col-sm-12 col-12">
               <div className="copyright_left">
-                <p>Copyright © 2022 All Rights Reserved by Sudhakar<a href="techzylabs.com">And Team</a>  </p>
+                <p>Copyright © 2024 All Rights Reserved by BelvaDigital<a href="https://joinstartup.africa">Startup</a>  </p>
               </div>
             </div>
             <div className="co-lg-6 col-md-6 col-sm-12 col-12">
               <div className="copyright_right">
                 <ul>
                   <li>
-                    <a href="#!">
+                    <a href="https://www.facebook.com/belvadigital/">
                       <i className="fab fa-facebook" />
                     </a>
                   </li>
                   <li>
-                    <a href="#!">
+                    <a href="https://twitter.com/belvadigital">
                       <i className="fab fa-twitter-square" />
                     </a>
                   </li>
                   <li>
-                    <a href="#!">
+                    <a href="https://www.instagram.com/belva_digital_innit">
                       <i className="fab fa-instagram" />
                     </a>
                   </li>
                   <li>
-                    <a href="#!">
+                    <a href="https://www.linkedin.com/company/belva-digital/">
                       <i className="fab fa-linkedin" />
                     </a>
                   </li>

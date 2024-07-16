@@ -1,23 +1,23 @@
 // https://www.payumoney.com/paybypayumoney/#/8EB506C87E7C702DE6C900D42A5206F2
 export const siteData = {
   siteId: "8EB506C87E7C702DE6C900D",
-  name: "Shine NGO",
+  name: "Startup",
   donationUrl:
-    "https://www.payumoney.com/paybypayumoney/#/8EB506C87E7C702DE6C900D42A5206F2",
-  logo: "https://www.payumoney.com/assets/images/logo.png",
-  phone: "+91 84002 55888",
-  email: "shinengoindia@gmail.com",
-  address: "Maharajganj Chauraha Gorakhpur, 273007 Uttar Pradesh",
-  joinLink: "https://www.instagram.com/shine_ngo_/",
+    "https://joinstartup.africa/auth/login",
+  logo: "https://joinstartup.africa/logo.png",
+  phone: "+254 7254 36181",
+  email: "startupatbelva@gmail.com",
+  address: "Nairobi Kenya, 7734, Muchai Drive",
+  joinLink: "https://joinstartup.africa/auth/signup",
   social: {
-    facebook: "https://www.facebook.com/Shinengo1/",
-    twitter: "https://twitter.com/shine_ngo_",
-    instagram: "https://www.instagram.com/shine_ngo_/",
+    facebook: "https://www.facebook.com/belvadigital/",
+    twitter: "https://twitter.com/belvadigital",
+    instagram: "https://www.instagram.com/belva_digital_innit",
     linkedin:
-      "https://www.linkedin.com/company/shine-educational-welfare-society",
-    youtube: "https://www.youtube.com/channel/UC0m0_dxQrogcxNFCnpaJMtg",
+      "https://www.linkedin.com/company/belva-digital/",
+    youtube: "https://www.youtube.com/channel/UCqlREL5ZpGwxtc0Q7kknr3g",
   },
   version:'1.0.1',
-  desc:'Shine Educational and Welfare Society started as a camp meant for encouraging education, providing financial support and establishing a good society.'
+  desc:'Our platform seamlessly links you with skilled freelancers, meticulously vetted to provide exceptional digital services. Elevate your endeavors by tapping into their expertise.'
 };
 

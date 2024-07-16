@@ -12,14 +12,14 @@ const Donate: React.FC<DonateProps> = ({donationLink}) => {
         <div className="row">
           <div className="col-lg-6 offset-lg-3">
             <div className="donate_text">
-              <h3>We are here to Help People</h3>
+              <h3>Connecting Businesses & Freelancers</h3>
               <h2>
-                We are fundraising for the{" "}
-                <span className="color_big_heading">people</span> who are
-                fighting against time
+                Elevate your endeavors by tapping into their expertise{" "}
+                <span className="color_big_heading">people </span>
+                 guiding you towards achieving
               </h2>
               <a href={siteData.donationUrl} className="btn btn_md btn_theme">
-                Donate now
+                Get Started
               </a>
             </div>
           </div>

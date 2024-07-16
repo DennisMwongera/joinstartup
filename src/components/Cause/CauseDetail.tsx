@@ -13,7 +13,7 @@ interface CauseDetailProps {
 const CauseDetail: React.FC<CauseDetailProps> = () => {
   const { slug } = useParams<{ slug: string }>();
 
-    const educationCause = causeDetailData[slug];
+  const cause = causeDetailData[slug as keyof typeof causeDetailData];
   return (
     <section id="trending_causes_main" className="section_padding">
       <div className="container">
@@ -22,33 +22,33 @@ const CauseDetail: React.FC<CauseDetailProps> = () => {
             <div className="details_wrapper_area">
               <div className="details_big_img">
                 <img
-                  src={educationCause.mainImageSrc}
-                  alt={educationCause.mainImageAlt}
+                  src={cause.mainImageSrc}
+                  alt={cause.mainImageAlt}
                 />
                 <span className="causes_badge bg-yellow">
-                  {educationCause.badgeText}
+                  {cause.badgeText}
                 </span>
               </div>
               <div className="details_skill_area">
                 <div className="class-full causes_pro_bar_flex progress_bar">
                   <div className="class-full-bar-box">
                     <h3 className="h3-title">
-                      Goal: <span>{educationCause.goalAmount}</span>
+                      Goal: <span>{cause.goalAmount}</span>
                     </h3>
                     <div className="class-full-bar-percent">
                       <h2>
                         <span
                           className="counting-data"
-                          data-count={educationCause.progressPercentage}
+                          data-count={cause.progressPercentage}
                         >
-                          {educationCause.progressPercentage}
+                          {cause.progressPercentage}
                         </span>
                         <span>%</span>
                       </h2>
                     </div>
                     <div
                       className="skill-bar class-bar"
-                      data-width={`${educationCause.progressPercentage}%`}
+                      data-width={`${cause.progressPercentage}%`}
                     >
                       <div className="skill-bar-inner class-bar-in"></div>
                     </div>
@@ -64,7 +64,7 @@ const CauseDetail: React.FC<CauseDetailProps> = () => {
                 </div>
               </div>
               <div className="details_text_wrapper">
-                {educationCause.detail.map((data: { title: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; description: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; description1: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; }) => (
+                {cause.detail.map((data: { title: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; description: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; description1: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; }) => (
                   <>
                     <h2>{data.title}</h2>
                     <p>{data.description}</p>
@@ -73,7 +73,7 @@ const CauseDetail: React.FC<CauseDetailProps> = () => {
                 ))}
 
                 <div className="row">
-                  {educationCause.smallImages.map((image: string | undefined, index: React.Key | null | undefined) => (
+                  {cause.smallImages.map((image: string | undefined, index: React.Key | null | undefined) => (
                     <div
                       key={index}
                       className="col-lg-4 col-md-4 col-sm-6 col-12"
@@ -105,20 +105,20 @@ const CauseDetail: React.FC<CauseDetailProps> = () => {
                 </div>
                 <div className="project_organizer_text">
                   <h5>Project organizer:</h5>
-                  <h3>{educationCause.organizer.name}</h3>
-                  <p>{educationCause.organizer.role}</p>
+                  <h3>{cause.organizer.name}</h3>
+                  <p>{cause.organizer.role}</p>
                   <ul>
                     <li>
                       <img src="/assets/img/icon/tag.png" alt="icon" /> Category:{" "}
-                      <span>{educationCause.organizer.category}</span>
+                      <span>{cause.organizer.category}</span>
                     </li>
                     <li>
                       <img src="/assets/img/icon/map.png" alt="icon" /> Location:{" "}
-                      <span>{educationCause.organizer.location}</span>
+                      <span>{cause.organizer.location}</span>
                     </li>
                     <li>
                       <img src="/assets/img/icon/cal.png" alt="icon" /> Date:{" "}
-                      <span>{educationCause.organizer.date}</span>
+                      <span>{cause.organizer.date}</span>
                     </li>
                   </ul>
                 </div>
@@ -129,7 +129,7 @@ const CauseDetail: React.FC<CauseDetailProps> = () => {
                     <h3>Top donations</h3>
                   </div>
 
-                  {educationCause.topDonater.map((data: { name: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; amount: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; }) => (
+                  {cause.topDonater.map((data: { name: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; amount: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<React.AwaitedReactNode> | null | undefined; }) => (
                     <div className="recent_donet_item">
                       <div className="recent_donet_img">
                         <a href="#">

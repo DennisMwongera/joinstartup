@@ -26,7 +26,7 @@ const Navbar: React.FC<NavbarProps> = () => {
         <div className="container">
           <nav className="navbar navbar-expand-md navbar-light">
             <a className="navbar-brand" href="index.html">
-              <img src="/assets/img/logo.png" alt="logo" />
+              <img src="/assets/img/logo.png"  width={150} height={150} alt="logo" />
             </a>
             <div
               className="collapse navbar-collapse mean-menu"
@@ -42,7 +42,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                 </div>
                 <div className="option-item">
                   <a href={siteData.donationUrl} className="btn btn_navber">
-                    Donate now
+                    Get Started
                   </a>
                 </div>
               </div>

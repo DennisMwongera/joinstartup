@@ -10,7 +10,7 @@ import { khyaliii } from "./cause-list/khyal-iii";
 import { khyalii } from "./cause-list/khyal-ii";
 import { khyal } from "./cause-list/khyal";
 import { plantation } from "./cause-list/plantation";
-import { floodRelief } from "./cause-list/flood-relief";
+// import { floodRelief } from "./cause-list/flood-relief";
 import { blooddonation } from "./cause-list/blooddonation";
 import { bookbank } from "./cause-list/bookbank";
 
@@ -46,17 +46,17 @@ export const sampleOrganizer: ProjectOrganizer = {
 };
 
 export const educationCause: CausesDetails = {
-  badgeText: "Education",
-  goalAmount: "11,000",
+  badgeText: "Social Media",
+  goalAmount: "20,000",
   progressPercentage: 89,
   mainImageSrc: "/assets/img/causes/education/img2.jpg",
   mainImageAlt: "Cause Details",
   detail: [
     {
       id: uuid4(),
-      title: "About Education Hut School",
+      title: "Social Media Manager.",
       description:
-        "The brick walls of school are stronger than any other fortresses of the world. Eduaction hut school teaches class 1-3 kids of the village where they are provided with books, bags, sweaters etc. The school has a eight hour schedule where focus on every subject is given. Martial arts and social skills are also taught to them. At school, We hope to bring a change in their lives with eduaction.eryone has equal rights for the education from birth. The growth and development of any Mornings at Eduaction hut School. There is a morning assembly which starts with morning prayers and from there students go to their classes. In break they can play at the ground and also have their lunches. Till the end of the day, they are given homework and schedule for next day.",
+        "I will take your social media to new heights! Let's craft a strategy that gets your audience talking and your business shine online.",
       image: "",
       description1: "",
     },
@@ -132,7 +132,7 @@ export const amrit: CausesDetails = {
       id: uuid4(),
       title: "Our Plan",
       description:
-        "We need to work together to sustainably manage this precious resource.Groundwater may be out of sight, but it must not be out of mind. Groundwater needs to be used carefully and sustainably – but we cannot manage what we do not measure. Groundwater must be thoroughly explored, analyzed and monitored. We are looking for innovative ideas from your side for this campaign.So if you have any please share with us. You can also share your real life experience, story, problem or anything of such kind about groundwater pollution. We would also approach several places under our Mission to make clean water available for all by installing appropriate water treatment plans. So, if you have any place ( village, town or city) in your knowledge let us know. We would love to hear from you. We also proudly announce Together Ek Saath Foundation as our sponsor for this campaign. Join us in this campaign !!",
+        "We need to work together to sustainably manage this precious resource.Groundwater may be out of sight, but it must not be out of mind. Groundwater needs to be used carefully and sustainably – but we cannot manage what we do not measure. Groundwater must be thoroughly explored, analyzed and monitored. We are looking for innovative ideas from your side for this campaign.So if you have any please share with us. You can also share your real life experience, story, problem or anything of such kind marketplace groundwater pollution. We would also approach several places under our Mission to make clean water available for all by installing appropriate water treatment plans. So, if you have any place ( village, town or city) in your knowledge let us know. We would love to hear from you. We also proudly announce Together Ek Saath Foundation as our sponsor for this campaign. Join us in this campaign !!",
       image: "",
       description1: "",
     },
@@ -324,6 +324,45 @@ export const BlanketCause: CausesDetails = {
   ],
   organizer: sampleOrganizer,
 };
+export const socialMediaManager: CausesDetails = {
+  badgeText: "Social Media",
+  goalAmount: "20,000",
+  progressPercentage: 85,
+  mainImageSrc: "assets/img/causes/1.jpg",
+  mainImageAlt: "Social Media Manager",
+  detail: [
+    {
+      id: uuid4(),
+      title: "Social Media Manager",
+      description: "I will take your social media to new heights!",
+      image: "assets/img/causes/1.jpg",
+      description1: "",
+    },
+  ],
+  title: "Social Media Manager",
+  description1: "I will take your social media to new heights! As a skilled social media manager, I offer comprehensive services to boost your online presence and engage your target audience effectively.",
+  description2: "With my expertise, you can expect increased followers, improved engagement rates, and a stronger brand identity across all major social media platforms.",
+  smallImages: [
+    "assets/img/causes/1.jpg",
+    // Add more relevant images if needed
+  ],
+  topDonater: [
+    {
+      id: uuid4(),
+      name: "John Doe",
+      amount: "500",
+      img: "/assets/img/sidebar/rec-donet-1.png",
+    },
+    // Add more top donaters if needed
+  ],
+  organizer: {
+    name: "Tiffany Nyambura",
+    role: "Social Media Expert",
+    category: "Digital Marketing",
+    location: "Online",
+    date: "20 June, 2024",
+  },
+};
 export const causeDetailData: any = {
   education: educationCause,
   amrit: amrit,
@@ -331,7 +370,7 @@ export const causeDetailData: any = {
   "blanket-distribution": BlanketCause,
   "book-bank": bookbank,
   "blood-donation": blooddonation,
-  "flood-relief": floodRelief,
+  // "flood-relief": floodRelief,
   plantation: plantation,
   khyal: khyal,
   "khyal-ii": khyalii,
@@ -340,4 +379,5 @@ export const causeDetailData: any = {
   "education-hut-rajhi": EducationHutRajhi,
   "education-hut-kanpur": EducationHutKanpur,
   "education-hut-shankarpur": EducationHutShankarpur,
+  socialMediaManager: socialMediaManager
 };

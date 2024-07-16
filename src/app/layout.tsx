@@ -30,13 +30,13 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;900&family=Kanit:wght@400;500;600;700&display=swap"
         />
-        <title>Shine Ngo - Best NGO in Gorakhpur</title>
+        <title>Startup</title>
       </head>
 
       <body>
         <AOSProvider>{children}</AOSProvider>
       </body>
-      
+
       <Script src="/assets/js/jquery.min.js"></Script>
       <Script src="/assets/js/bootstrap.bundle.js"></Script>
       <Script src="/assets/js/jquery.meanmenu.js"></Script>

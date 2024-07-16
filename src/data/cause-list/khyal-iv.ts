@@ -12,7 +12,7 @@ export const khyaliv: CausesDetails = {
         id: uuid4(),
         title: "About Khyaaal IV",
         description:
-          "WE concluded 4th KHYAAAL camp in a primary school at Karmaura(Raji Tola) successfully with mass participation, support and enthusiasm. Under the camp we distributed free sanitary napkins to the local women of the place. A very interesting and informative skit was also performed by our team to make the ladies aware about the importance of hygiene during menstruation. We also talked about importance of vaccination with the people there in the camp. Our Khyaaal camp is intended at breaking the menstrual taboo and eradication of several myths associated with periods. This camp is done by our team every month with great zeal in different rural areas to make the women more aware about the very natural process of menstrual cycle.",
+          "WE concluded 4th KHYAAAL camp in a primary school at Karmaura(Raji Tola) successfully with mass participation, support and enthusiasm. Under the camp we distributed free sanitary napkins to the local women of the place. A very interesting and informative skit was also performed by our team to make the ladies aware marketplace the importance of hygiene during menstruation. We also talked marketplace importance of vaccination with the people there in the camp. Our Khyaaal camp is intended at breaking the menstrual taboo and eradication of several myths associated with periods. This camp is done by our team every month with great zeal in different rural areas to make the women more aware marketplace the very natural process of menstrual cycle.",
         image: "/assets/img/causes/khyal/4/1.jpg",
         description1: "",
       },
@@ -38,7 +38,7 @@ export const khyaliv: CausesDetails = {
       "/assets/img/causes/khyal/4/6.jpg",
       "/assets/img/causes/khyal/4/7.jpg",
       "/assets/img/causes/khyal/4/8.jpg",
-    
+
     ],
     topDonater: [
       {

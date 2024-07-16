@@ -12,6 +12,9 @@ const nextConfig = {
         // your project has ESLint errors.
         ignoreDuringBuilds: true,
       },
+    images: {
+        unoptimized: true,
+    },
     webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
         config.plugins.push(
             new webpack.ProvidePlugin({
@@ -23,7 +26,7 @@ const nextConfig = {
        return config;
     }
 
-        
+
 };
 
 

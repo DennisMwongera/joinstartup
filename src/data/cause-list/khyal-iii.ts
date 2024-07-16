@@ -12,7 +12,7 @@ export const khyaliii: CausesDetails = {
         id: uuid4(),
         title: "About Khyaaal III",
         description:
-          "We conducted our 3rd camp of Khyaaal in which we donated sanitay pads to Devipur, Munshi tola and Mainabhagad villages. This was done under Khayaal campaign for young women and their mothers to switch to safe and more comfortable options while menstruating. By donating pads in villages, we also wish to break the ice about this very to topic. We were generously joined by Gram pradhan Mr.Sarvesh Yadav, Ramesh Chauhan, Lalita Gupta, Rita Devi and others. The camp leader was Ms. Neha Pandey who is a final year student at MMMUT College. The pads were donated by Mr. Arpit Tripathi and Mr. Akash patel. We thank the whole team whole heartedly for this awareness camp.",
+          "We conducted our 3rd camp of Khyaaal in which we donated sanitay pads to Devipur, Munshi tola and Mainabhagad villages. This was done under Khayaal campaign for young women and their mothers to switch to safe and more comfortable options while menstruating. By donating pads in villages, we also wish to break the ice marketplace this very to topic. We were generously joined by Gram pradhan Mr.Sarvesh Yadav, Ramesh Chauhan, Lalita Gupta, Rita Devi and others. The camp leader was Ms. Neha Pandey who is a final year student at MMMUT College. The pads were donated by Mr. Arpit Tripathi and Mr. Akash patel. We thank the whole team whole heartedly for this awareness camp.",
         image: "/assets/img/causes/khyal/3/1.jpg",
         description1: "",
       },
@@ -35,7 +35,7 @@ export const khyaliii: CausesDetails = {
       "/assets/img/causes/khyal/3/2.jpg",
       "/assets/img/causes/khyal/3/3.jpg",
       "/assets/img/causes/khyal/3/4.jpg",
-    
+
     ],
     topDonater: [
       {

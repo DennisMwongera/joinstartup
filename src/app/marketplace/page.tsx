@@ -16,13 +16,13 @@ export default function AboutPage() {
     <>
       <Wrapper>
         <Header title={""} description={""} />
-        <BreadCrumb name={"About Us"} />
-        <AboutPageMain />
+        <BreadCrumb name={"MarketPlace"} />
+        {/*<AboutPageMain />*/}
         <AboutService/>
 
         <Donate donationLink={""} />
-        <BlogThumb />
-        <Subscribe />
+        {/*<BlogThumb />*/}
+        {/*<Subscribe />*/}
         <Footer title={""} description={""} />
       </Wrapper>
     </>

@@ -1,15 +1,15 @@
 import React from "react";
 import Image from "next/image";
 
-import image1 from "@/assets/img//banner/3087209.jpeg";
-import image2 from "@/assets/img//banner/4321059.jpeg";
-import image3 from "@/assets/img//banner/7121375.jpeg";
+import image1 from "@/assets/img//banner/smiling-woman-looking-desktop.png";
+// import image2 from "@/assets/img//banner/4321059.jpeg";
+// import image3 from "@/assets/img//banner/7121375.jpeg";
 import { getRandomData } from "@/util/randomimegs";
 
 const data = {
   1: image1,
-  2: image2,
-  3: image3,
+  // 2: image2,
+  // 3: image3,
 };
 interface HomeBannerProps {}
 
@@ -23,14 +23,17 @@ const HomeBanner: React.FC<HomeBannerProps> = () => {
               <div className="banner_one_text">
                 <h1>
                   <span>
-                    <span className="color_big">Welcome </span>
+                    <span className="color_big">STARTUP</span>
                   </span>
-                  Lets make someone’s life better
                 </h1>
+                <h3>Connecting Businesses & Freelancers</h3>
+                <img className="slide-1__left-dashed moveInRightDash duration--2"
+                     src="/images/left-dashed-desktop.svg" alt=""/>
                 <p>
-                  In a world where you can be anything, Be kind We aspire to be
-                  Givers. Givers of love, Givers of good vibes and Givers of
-                  strength
+                  Our platform seamlessly links you with skilled freelancers,
+                  meticulously vetted to provide exceptional digital services.
+                  Elevate your endeavors by tapping into their expertise,
+                  guiding you towards achieving your desired milestones and objectives.
                 </p>
               </div>
             </div>
